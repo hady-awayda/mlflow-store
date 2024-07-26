@@ -27,7 +27,7 @@ python train_decision_tree.py
 
 # This will start a FastAPI server on endpoint:
 
-http://0.0.0.0:8001/train (POST)
+http://localhost:8001/train (POST)
 
 # Request Body (json):
 
