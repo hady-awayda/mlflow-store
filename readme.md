@@ -15,21 +15,21 @@ This repository contains two FastAPI applications for training and loading machi
    mlflow ui
    ```
 
-### Running the Applications
+# Running the Applications
 
 ## Train Decision Tree Model
 
-# To start the training application, run:
+### To start the training application, run:
 
 ```bash
 python train_decision_tree.py
 ```
 
-# This will start a FastAPI server on endpoint:
+### This will start a FastAPI server on endpoint:
 
 http://localhost:8001/train (POST)
 
-# Request Body (json):
+### Request Body (json):
 
 ```bash
 {
@@ -37,17 +37,17 @@ http://localhost:8001/train (POST)
 }
 ```
 
-## Loading Decision Tree Model
+## To Load Decision Tree Model, run:
 
 ```bash
 python load_model.py
 ```
 
-# This will start a FastAPI server on endpoint:
+### This will start a FastAPI server on endpoint:
 
 http://localhost:8002/load (POST)
 
-# Request Body (json):
+### Request Body (json):
 
 ```bash
 {
