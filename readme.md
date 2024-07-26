@@ -25,32 +25,32 @@ This repository contains two FastAPI applications for training and loading machi
 python train_decision_tree.py
 ```
 
-This will start a FastAPI server on http://0.0.0.0:8001
-
-# Endpoint
+# This will start a FastAPI server on endpoint:
 
 http://0.0.0.0:8001/train (POST)
 
 # Request Body (json):
 
+```bash
 {
-"criterion": "gini"
+   "criterion": "gini"
 }
+```
 
-## To start the loading application, run:
+## Loading Decision Tree Model
 
 ```bash
 python load_model.py
 ```
 
-This will start a FastAPI server on http://0.0.0.0:8002
+# This will start a FastAPI server on endpoint:
 
-# Endpoint
-
-http://0.0.0.0:8002/load (POST)
+http://localhost:8002/load (POST)
 
 # Request Body (json):
 
+```bash
 {
-"run_id": "your_run_id_here"
+   "run_id": "your_run_id_here"
 }
+```
