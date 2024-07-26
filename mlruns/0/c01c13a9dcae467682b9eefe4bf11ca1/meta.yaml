@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/hady_/Desktop/SE%20Factory/mlflow-store/mlruns/0/c01c13a9dcae467682b9eefe4bf11ca1/artifacts
+end_time: 1721968092484
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c01c13a9dcae467682b9eefe4bf11ca1
+run_name: whimsical-elk-449
+run_uuid: c01c13a9dcae467682b9eefe4bf11ca1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721968078050
+status: 3
+tags: []
+user_id: Hady
