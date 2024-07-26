@@ -16,7 +16,7 @@ def load_model(run_id):
 	except Exception as e:
 		raise HTTPException(status_code=400, detail=str(e))
 
-@app.post("/api/load")
+@app.post("/api/v1/load")
 def load_model_endpoint(request: LoadModelRequest):
 	model = load_model(request.run_id)
 	return {"message": f"Model with run_id={request.run_id} loaded."}

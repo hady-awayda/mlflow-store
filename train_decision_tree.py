@@ -64,7 +64,7 @@ def log_model(model, accuracy, criterion):
         logger.error(f"Error: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/api/train")
+@app.post("/api/v1/train")
 def train(request: TrainModelRequest):
     try:
         model, accuracy = train_model(request.criterion)
