@@ -15,11 +15,11 @@ This repository contains two FastAPI applications for training and loading machi
    mlflow ui
    ```
 
-## Running the Applications
+### Running the Applications
 
-### Train Decision Tree Model
+## Train Decision Tree Model
 
-## To start the training application, run:
+# To start the training application, run:
 
 ```bash
 python train_decision_tree.py

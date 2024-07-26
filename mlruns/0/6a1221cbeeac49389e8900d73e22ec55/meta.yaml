@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/hady_/Desktop/SE%20Factory/mlflow-store/mlruns/0/6a1221cbeeac49389e8900d73e22ec55/artifacts
+end_time: 1721966316295
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6a1221cbeeac49389e8900d73e22ec55
+run_name: hilarious-goose-34
+run_uuid: 6a1221cbeeac49389e8900d73e22ec55
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721966310377
+status: 3
+tags: []
+user_id: Hady
