@@ -1,10 +1,11 @@
 from fastapi import FastAPI
-from app.routers import train_model, load_model
+from app.routers.train_router import router as train_router
+from app.routers.load_router import router as load_router
 
 app = FastAPI()
 
-app.include_router(train_model.router, prefix="/api/v1")
-app.include_router(load_model.router, prefix="/api/v1")
+app.include_router(train_router, prefix="/api/v1")
+app.include_router(load_router, prefix="/api/v1")
 
 if __name__ == "__main__":
     import uvicorn
