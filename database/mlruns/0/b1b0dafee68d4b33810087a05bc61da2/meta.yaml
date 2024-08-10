@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/b1b0dafee68d4b33810087a05bc61da2/artifacts
+end_time: 1723294863315
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b1b0dafee68d4b33810087a05bc61da2
+run_name: enchanting-grouse-73
+run_uuid: b1b0dafee68d4b33810087a05bc61da2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723294860011
+status: 3
+tags: []
+user_id: Hady
