@@ -26,7 +26,7 @@ def predict_success(input_series):
         int: The predicted success of the item. The value is 0 or 1, where 1 indicates success and 0 indicates failure.
     """
     # Load the saved model
-    model_path = os.path.join('models', 'success_prediction_model.joblib')
+    model_path = os.path.join('../', 'models', 'success_prediction_model.joblib')
     loaded_model = joblib.load(model_path)
 
     # Create a DataFrame from the input Series
