@@ -1,6 +1,10 @@
 from app.models.train_model import train_model
 from app.utils.logger import logger
 import mlflow
+import os
+
+desktop_path = os.path.join(os.path.expanduser("~"), "Desktop", "mlruns")
+mlflow.set_tracking_uri(f"file:///{desktop_path}")
 
 def train_model_service(criterion):
     try:
