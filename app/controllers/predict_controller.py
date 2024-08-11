@@ -1,12 +1,7 @@
-from fastapi import HTTPException
-from app.schemas.predict_model import PredictModelRequest
-from app.services.predict_service import predict_success_service
+from app.schemas.predict_model import PredictRequest
+from app.models.predict_model import predict_success
 
-def predict_controller(input_data: PredictModelRequest):
-    try:
-        prediction = predict_success_service(input_data.dict())
-        return {"success_prediction": prediction}
-    except HTTPException as e:
-        raise e
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+def predict_controller(request: PredictRequest):
+    input_series = request.dict()
+    prediction = predict_success(input_series)
+    return {"prediction": prediction}

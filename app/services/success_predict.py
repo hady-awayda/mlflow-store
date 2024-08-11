@@ -40,15 +40,15 @@ def predict_success(input_series):
 
 # Example usage
 input_series = {
-    'category': 'GAME',
-    'size': 50000,
-    'type': 'Free',
-    'price': 0,
-    'content rating': 'Everyone',
-    'genres': 'Action',
-    'current ver': '2.3.0',
-    'android ver': '4.0 and up',
-    'sentiment': 50
+    "category": "GAME",
+    "size": 50000,
+    "type": "Free",
+    "price": 0,
+    "content rating": "Everyone",
+    "genres": "Action",
+    "current ver": "2.3.0",
+    "android ver": "4.0 and up",
+    "sentiment": 50
 }
 
 print(predict_success(input_series))

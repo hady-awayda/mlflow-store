@@ -1,12 +1,12 @@
 from pydantic import BaseModel
 
-class PredictModelRequest(BaseModel):
+class PredictRequest(BaseModel):
     category: str
-    size: int
+    size: str
     type: str
-    price: float
+    price: str
     content_rating: str
     genres: str
     current_ver: str
     android_ver: str
-    sentiment: int
+    sentiment: str

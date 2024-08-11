@@ -4,6 +4,6 @@ from app.schemas.predict_model import PredictRequest
 
 router = APIRouter()
 
-@router.post("/predict")
+@router.post("/predict/random_forest_classifier")
 def predict_route(request: PredictRequest):
-    return {"success_prediction": predict_controller(request)}
+    return predict_controller(request)
