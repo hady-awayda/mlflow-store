@@ -1,13 +1,12 @@
 from sqlalchemy.orm import Session
 from app.schemas.auth_schemas import RegisterRequest
 from app.utils.hash_password import hash_password, verify_password
-from config.database import SessionLocal
 from database.models import User
 
 def create_user(db: Session, request: RegisterRequest):
     try:
         hashed_password = hash_password(request.password)
-        db_user = User(email=request.email, password=hashed_password)
+        db_user = User(name=request.name ,email=request.email, password=hashed_password)
         db.add(db_user)
         db.commit()
         db.refresh(db_user)
